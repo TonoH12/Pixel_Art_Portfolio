@@ -12,11 +12,14 @@ h1 {
     text-decoration:underline;
     font-size: 50px;
     margin: 8px;
+    margin-top: 25px;
+    margin-bottom: 0px;
 }
 
 p {
     font-family: "Jersey 15", sans-serif;
     font-size: 30px;
+    margin-top: 0;
 }
 
 section {
