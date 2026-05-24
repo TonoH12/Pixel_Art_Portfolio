@@ -13,7 +13,8 @@ h1 {
     font-size: 50px;
     margin: 8px;
     margin-top: 25px;
-    margin-bottom: 0px;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 p {
@@ -41,9 +42,7 @@ div {
 }
 
 .item:hover {
-    border-color: #ffc384;
-    border-style: solid;
-    border-width: 0.5vw;
+    box-shadow: 0 0 1vw 0.50vw #ffc384;
 }
 
 ul {
