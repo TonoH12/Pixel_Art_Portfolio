@@ -1,8 +1,8 @@
-function arrangePage() {
-    changeImage();
-    return true;
+function clickImage(this) {
+    sessionStorage.setItem(currentImage, this.getAttribute.src);
+    window.location.href = "image";
 }
 
-function changeImage() {
-    let img = this.firstElementChild.src;
+function setImage(this) {
+    this.firstElementChild.src = sessionStorage.getItem(currentImage);
 }
