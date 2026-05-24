@@ -26,8 +26,17 @@ div {
     margin: 8px;
 }
 
-.gallery {
-    display: block;
+.gallery_box {
+    float: left;
+    max-width: 30%;
+    max-height: 30%;
+    box-sizing: border-box;
+    aspect-ratio: 1 / 1;
+}
+
+.item {
+    width: 100%;
+    height: auto;
 }
 
 ul {
