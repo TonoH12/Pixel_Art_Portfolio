@@ -35,8 +35,15 @@ div {
 }
 
 .item {
+    box-sizing: border-box;
     width: 100%;
     height: auto;
+}
+
+.item:hover {
+    border-color: #ffc384;
+    border-style: solid;
+    border-width: 0.5vw;
 }
 
 ul {
