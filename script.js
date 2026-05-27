@@ -1,10 +1,10 @@
-// function clickImage(this) {
-//     console.log("js works");
-//     sessionStorage.setItem(currentImage, this.getAttribute.src);
-// }
+function getImage(event) {
+    event.preventDefault();
+    sessionStorage.setItem('givenImage', this.querySelector('img').src);
+    window.location.href = 'image.html';
+}
 
-function setImage() {
-    console.log("js works");
-    let img = document.getElementById('dependImage').setAttribute('src', 'Images/Cat.png');
-    // sessionStorage.getItem("");
+function setPage() {
+    // document.getElementById('dependImage').src = 'Images/Cat.png';
+    document.getElementById('dependImage').src = sessionStorage.getItem('givenImage');
 }
