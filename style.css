@@ -45,6 +45,17 @@ div {
     box-shadow: 0 0 1vw 0.50vw #ffc384;
 }
 
+.image_display_box {
+    background-color: #3f3f55;
+}
+
+.image_display {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%
+}
+
 ul {
     list-style-type: none;
     padding: 0;
