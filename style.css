@@ -46,16 +46,31 @@ div {
 }
 
 .image_display_box {
-    display: flex;
+    display: grid;
+    position: relative;
     align-items: center;
     background-color: #3f3f55;
     height: 60dvh;
+    overflow: hidden;
 }
 
 .image_display {
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 100%;
+}
+
+.glow-image {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(30px);
 }
 
 ul {
