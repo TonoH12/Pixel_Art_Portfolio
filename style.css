@@ -46,22 +46,25 @@ div {
 }
 
 .image_display_box {
+    display: flex;
+    align-items: center;
     background-color: #3f3f55;
+    height: 60dvh;
 }
 
 .image_display {
-    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%
+    height: 100%;
 }
 
 ul {
     list-style-type: none;
+    display: flex;
+    overflow: hidden;
     padding: 0;
     margin: 0;
     background-color: #ffc384;
-    display: flex;
 }
 
 ul li a {
@@ -72,6 +75,7 @@ ul li a {
     text-decoration: none;
     text-align: center;
     padding: 12px 20px;
+    white-space: nowrap;
 }
 
 ul li a:hover {
