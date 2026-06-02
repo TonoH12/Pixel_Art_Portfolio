@@ -63,6 +63,45 @@ div {
     height: 100%;
 }
 
+.size_display_box {
+    position: absolute;
+    z-index: 3;
+    background-color: #28282e;
+    opacity: 0.8;
+    border-radius: 5%;
+    bottom: 0%;
+}
+
+.back_button {
+    position: absolute;
+    z-index: 3;
+    top: 0%;
+    margin: 1vh;
+    color: #fff7e4;
+    background-color: #28282e;
+    border: none;
+    font-family:  "Jersey 15", sans-serif;
+    font-size: 25px;
+    padding: 1%;
+    padding-bottom: 0.5%;
+    text-decoration: none;
+    opacity: 0.9;
+    border-radius: 15%;
+}
+
+.back_button:hover {
+    border-style: solid;
+    border-color: #fff7e4;
+}
+
+.image_size {
+    color: #fff7e4;
+    font-size: 25px;
+    margin-bottom: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .glow-image {
     position: absolute;
     z-index: 1;
@@ -70,7 +109,7 @@ div {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    filter: blur(30px);
+    filter: blur(30px) brightness(130%);
 }
 
 ul {
