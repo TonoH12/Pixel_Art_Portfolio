@@ -112,6 +112,29 @@ div {
     filter: blur(30px) brightness(130%);
 }
 
+.outsideContainer {
+    display: flex;
+}
+
+.container {
+    background-color: #3f3f55;
+    overflow-wrap: anywhere;
+}
+
+#left_div {
+    margin-left: 0%;
+    width: var(--left_div_width, 375px);
+}
+
+#right_div {
+    margin-right: 0%;
+    width: var(--right_div_width, 250px);
+}
+
+.container_element {
+    background-color: inherit;
+}
+
 ul {
     list-style-type: none;
     display: flex;
