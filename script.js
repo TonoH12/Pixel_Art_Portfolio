@@ -13,3 +13,32 @@ resizeTextboxes();
 window.addEventListener('resize', function() {
     resizeTextboxes();
 });
+
+let currentImage = 1;
+function nextImage() {
+    currentImage++;
+    if (currentImage > 3) {
+        currentImage = 1;
+    }
+    switch (currentImage) {
+        case 1:
+            document.getElementById('rotatingImage').src = 'Images/Juice_Light.png';
+            break;
+        case 2:
+            document.getElementById('rotatingImage').src = 'Images/Dallies_Exotic.png';
+            break;
+        case 3:
+            document.getElementById('rotatingImage').src = 'Images/Dallies_Bubbles.png';
+            break;
+    }
+}
+
+// window.addEventListener('load', function() {
+document.addEventListener('DOMContentLoaded', function() {
+    currentImage = 1;
+    if (document.getElementById('imageCarousel') != null) {
+        let timer = setInterval(nextImage, 3000);
+    } else {
+        this.clearInterval(timer);
+    }
+});
