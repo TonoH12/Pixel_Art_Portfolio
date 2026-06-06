@@ -45,24 +45,29 @@ div {
     z-index: 1;
 }
 
-#leftButton {
+.button {
     position: absolute;
+    background-color: #28282e;
+    color: #fff7e4;
+    border: none;
+    font-family: "Jersey 15", sans-serif;
+    font-size: 25px;
+    border-radius: 10%;
+    padding: 1%;
+    padding-bottom: 0.7%;
+    opacity: 0.85;
+}
+
+#leftButton {
     z-index: 2;
     left: 0;
     margin-left: 1%;
-    border: none;
-    background-color: #28282e;
-    color: #fff7e4;
 }
 
 #rightButton {
-    position: absolute;
     z-index: 2;
     right: 0;
     margin-right: 1%;
-    border: none;
-    background-color: #28282e;
-    color: #fff7e4;
 }
 
 .gallery_box {
@@ -117,7 +122,6 @@ div {
     margin: 1vh;
     color: #fff7e4;
     background-color: #28282e;
-    border: none;
     font-family:  "Jersey 15", sans-serif;
     font-size: 25px;
     padding: 1%;
