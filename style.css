@@ -27,6 +27,20 @@ div {
     margin: 8px;
 }
 
+#imageCarousel {
+    align-content: center;
+    justify-content: center;
+    background-color: #3f3f55;
+    position: relative;
+    height: 60vh;
+}
+
+#rotatingImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .gallery_box {
     float: left;
     width: 350px;
