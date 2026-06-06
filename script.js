@@ -15,11 +15,28 @@ window.addEventListener('resize', function() {
 });
 
 let currentImage = 1;
+let timer;
+function imageMinus() {
+    currentImage -= 2;
+    nextImage();
+    clearInterval(timer);
+    timer = setInterval(nextImage, 3000);
+}
+
+function imageAdd() {
+    nextImage();
+    clearInterval(timer);
+    timer = setInterval(nextImage, 3000);
+}
+
 function nextImage() {
     currentImage++;
     if (currentImage > 3) {
         currentImage = 1;
+    } else if (currentImage < 1) {
+        currentImage = 3;
     }
+    
     switch (currentImage) {
         case 1:
             document.getElementById('rotatingImage').src = 'Images/Juice_Light.png';
@@ -37,8 +54,6 @@ function nextImage() {
 document.addEventListener('DOMContentLoaded', function() {
     currentImage = 1;
     if (document.getElementById('imageCarousel') != null) {
-        let timer = setInterval(nextImage, 3000);
-    } else {
-        this.clearInterval(timer);
+        timer = setInterval(nextImage, 3000);
     }
 });

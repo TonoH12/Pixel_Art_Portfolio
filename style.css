@@ -36,9 +36,33 @@ div {
 }
 
 #rotatingImage {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 1;
+}
+
+#leftButton {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    margin-left: 1%;
+    border: none;
+    background-color: #28282e;
+    color: #fff7e4;
+}
+
+#rightButton {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    margin-right: 1%;
+    border: none;
+    background-color: #28282e;
+    color: #fff7e4;
 }
 
 .gallery_box {
