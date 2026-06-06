@@ -30,6 +30,10 @@ function imageAdd() {
 }
 
 function nextImage() {
+    document.getElementById('circle1').style.backgroundColor = 'transparent';
+    document.getElementById('circle2').style.backgroundColor = 'transparent';
+    document.getElementById('circle3').style.backgroundColor = 'transparent';
+
     currentImage++;
     if (currentImage > 3) {
         currentImage = 1;
@@ -40,12 +44,15 @@ function nextImage() {
     switch (currentImage) {
         case 1:
             document.getElementById('rotatingImage').src = 'Images/Juice_Light.png';
+            document.getElementById('circle1').style.backgroundColor = '#fff7e4';
             break;
         case 2:
             document.getElementById('rotatingImage').src = 'Images/Dallies_Exotic.png';
+            document.getElementById('circle2').style.backgroundColor = '#fff7e4';
             break;
         case 3:
             document.getElementById('rotatingImage').src = 'Images/Dallies_Bubbles.png';
+            document.getElementById('circle3').style.backgroundColor = '#fff7e4';
             break;
     }
 }
