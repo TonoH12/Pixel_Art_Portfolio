@@ -4,7 +4,8 @@
 
 body {
     margin: 0;
-    color: #ffc384;
+    color: #ffc485;
+    cursor: url('UI_Images/Larger_Cursor.png'), auto; 
 }
 
 h1 {
@@ -27,6 +28,10 @@ p {
     font-family: "Jersey 15", sans-serif;
     font-size: 25px;
     margin-top: 0;
+}
+
+a {
+    cursor: url('UI_Images/Clicker.png'), pointer;
 }
 
 div {
@@ -62,6 +67,7 @@ div {
     padding: 1%;
     padding-bottom: 0.7%;
     opacity: 0.85;
+    cursor: url('UI_Images/Clicker.png'), pointer;
 }
 
 #leftButton {
@@ -113,7 +119,8 @@ div {
     box-sizing: border-box;
     width: 100%;
     height: auto;
-    transition: transform 2s ease-in-out;
+    transition: transform 0.1s ease-in-out;
+    cursor: url('UI_Images/Clicker.png'), pointer;
 }
 
 .item:hover {
