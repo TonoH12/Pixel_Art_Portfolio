@@ -113,10 +113,12 @@ div {
     box-sizing: border-box;
     width: 100%;
     height: auto;
+    transition: transform 2s ease-in-out;
 }
 
 .item:hover {
     box-shadow: 0 0 1vw 0.50vw #ffc384;
+    transform: scale(1.05);
 }
 
 .image_display_box {
