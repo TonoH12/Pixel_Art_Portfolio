@@ -46,7 +46,7 @@ div {
     height: 60vh;
 }
 
-#rotatingImage {
+.rotatingImg {
     position: absolute;
     top: 0;
     left: 0;
@@ -58,6 +58,7 @@ div {
 
 .button {
     position: absolute;
+    z-index: 2;
     background-color: #28282e;
     color: #fff7e4;
     border: none;
@@ -71,13 +72,11 @@ div {
 }
 
 #leftButton {
-    z-index: 2;
     left: 0;
     margin-left: 1%;
 }
 
 #rightButton {
-    z-index: 2;
     right: 0;
     margin-right: 1%;
 }

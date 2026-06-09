@@ -43,15 +43,18 @@ function nextImage() {
     
     switch (currentImage) {
         case 1:
-            document.getElementById('rotatingImage').src = 'Images/Juice_Light.png';
+            document.getElementById('rotatingImage3').style.opacity = 0;
+            document.getElementById('rotatingImage1').style.opacity = 1;
             document.getElementById('circle1').style.backgroundColor = '#fff7e4';
             break;
         case 2:
-            document.getElementById('rotatingImage').src = 'Images/Dallies_Exotic.png';
+            document.getElementById('rotatingImage1').style.opacity = 0;
+            document.getElementById('rotatingImage2').style.opacity = 1;
             document.getElementById('circle2').style.backgroundColor = '#fff7e4';
             break;
         case 3:
-            document.getElementById('rotatingImage').src = 'Images/Dallies_Bubbles.png';
+            document.getElementById('rotatingImage2').style.opacity = 0;
+            document.getElementById('rotatingImage3').style.opacity = 1;
             document.getElementById('circle3').style.backgroundColor = '#fff7e4';
             break;
     }
