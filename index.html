@@ -17,15 +17,24 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="about.html">About Me</a></li>
+                <li id="rightAlignLink"><a href="." role="button" onclick="openPopup()">Settings</a></li>
             </ul>
         </header>
+        
+        <!-- <div id="popup">
+            <div class="blur"></div>
+            <div class="popupBox">
+                <button id="closePopup" type="button" onclick="closePopup()">X</button>
+                <h1>Settings</h1>
+            </div>
+        </div> -->
         
         <div id="imageCarousel">
             <img id="rotatingImage1" class="rotatingImg" src="Images/Juice_Light.png">
             <img id="rotatingImage2" class="rotatingImg" src="Images/Dallies_Exotic.png" style="opacity: 0;">
             <img id="rotatingImage3" class="rotatingImg" src="Images/Dallies_Bubbles.png" style="opacity: 0;">
-            <button id="leftButton" class="button" type="button" onclick="imageMinus()">❮</button>
-            <button id="rightButton" class="button" type="button" onclick="imageAdd()">❯</button>
+            <button id="leftButton" type="button" onclick="imageMinus()">❮</button>
+            <button id="rightButton" type="button" onclick="imageAdd()">❯</button>
             <div id="pagination">
                 <div id="circle1" class="circle" style="background-color: #fff7e4;"></div>
                 <div id="circle2" class="circle"></div>

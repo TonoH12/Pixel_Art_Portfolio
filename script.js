@@ -63,6 +63,14 @@ function nextImage() {
     }
 }
 
+function openPopup() {
+
+}
+
+function closePopup() {
+    
+}
+
 // window.addEventListener('load', function() {
 document.addEventListener('DOMContentLoaded', function() {
     currentImage = 1;
