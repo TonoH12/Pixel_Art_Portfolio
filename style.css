@@ -281,10 +281,10 @@ a:hover {
 
 #popup {
     margin: 0;
+    display: none;
 }
 
-#blur {
-    display: none;
+.blur {
     position: fixed;
     z-index: 100;
     top: 0%;
@@ -295,8 +295,7 @@ a:hover {
     backdrop-filter: blur(10px);
 }
 
-#popupBox {
-    display: none;
+.popupBox {
     background-color: white;
     position: absolute;
     z-index: 100;

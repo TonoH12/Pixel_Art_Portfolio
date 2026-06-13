@@ -64,13 +64,11 @@ function nextImage() {
 }
 
 function openPopup() {
-    document.getElementById('blur').style.display = 'initial';
-    document.getElementById('popupBox').style.display = 'initial';
+    document.getElementById('popup').style.display = 'flex';
 }
 
 function closePopup() {
-    document.getElementById('blur').style.display = 'none';
-    document.getElementById('popupBox').style.display = 'none';
+    document.getElementById('popup').style.display = 'none';
 }
 
 // window.addEventListener('load', function() {
