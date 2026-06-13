@@ -254,20 +254,37 @@ ul li a {
     white-space: nowrap;
 }
 
-ul li a:hover {
+a:hover {
     background-color: #accce4;
     color: #fff7e4;
 }
 
-#rightAlignLink{
-    margin-left: auto;
+#settings {
+    display: block;
+    background-color: #b0a9e4;
+    color: #28282e;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 20px;
+    white-space: nowrap;
+    border-radius: 0;
+    font-family: initial;
+    font-size: initial;
+    right: 0;
+}
+
+#settings:hover {
+    background-color: #accce4;
+    color: #fff7e4;
 }
 
 #popup {
     margin: 0;
 }
 
-.blur {
+#blur {
+    display: none;
     position: fixed;
     z-index: 100;
     top: 0%;
@@ -278,7 +295,8 @@ ul li a:hover {
     backdrop-filter: blur(10px);
 }
 
-.popupBox {
+#popupBox {
+    display: none;
     background-color: white;
     position: absolute;
     z-index: 100;
