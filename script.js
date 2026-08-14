@@ -64,11 +64,11 @@ function nextImage() {
 }
 
 function openPopup() {
-    document.getElementById('popup').style.display = 'flex';
+    document.getElementById('popup').style.opacity = 1;
 }
 
 function closePopup() {
-    document.getElementById('popup').style.display = 'none';
+    document.getElementById('popup').style.opacity = 0;
 }
 
 // window.addEventListener('load', function() {
