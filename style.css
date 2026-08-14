@@ -1,9 +1,12 @@
+*{
+    cursor: url('UI_Images/Larger_Cursor.png'), auto;
+}
+
 body {
     height: 100%;
     background-color: #28282e;
     margin: 0;
-    color: #b0a9e4;
-    cursor: url('UI_Images/Larger_Cursor.png'), auto; 
+    color: #b0a9e4; 
 }
 
 h1 {
@@ -197,6 +200,10 @@ button {
     display: flex;
 }
 
+.outsideContainer p {
+    margin-bottom: 2%;
+}
+
 .container {
     background-image: radial-gradient(circle, #28282e, #3f3f55);
     overflow-wrap: anywhere;
@@ -282,6 +289,15 @@ a:hover {
 #popup {
     margin: 0;
     display: none;
+    opacity: 0;
+    transition: opacity 3s ease-in-out, z-index 3s step-start, display 3s ease;
+    transition-behavior: allow-discrete;
+}
+
+@starting-style {
+    #popup {
+        opacity: 0;
+    }
 }
 
 .blur {
