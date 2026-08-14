@@ -266,7 +266,7 @@ a:hover {
     color: #fff7e4;
 }
 
-#settings {
+/* #settings {
     display: block;
     background-color: #b0a9e4;
     color: #28282e;
@@ -284,11 +284,11 @@ a:hover {
 #settings:hover {
     background-color: #accce4;
     color: #fff7e4;
-}
+} */
 
-#popup {
+/* #popup {
     margin: 0;
-    opacity: 0;
+    opacity: 1;
     z-index: 2;
     pointer-events: none;
 }
@@ -305,7 +305,8 @@ a:hover {
 }
 
 .popupBox {
-    background-color: white;
+    background-color: #28282e;
+    box-shadow: 0 0 2vw 2vw #b0a9e4;
     position: absolute;
     z-index: 100;
     margin-left: 50vw;
@@ -323,5 +324,8 @@ a:hover {
     right: 3%;
     width: fit-content;
     aspect-ratio: 1 / 1;
+    border-style: solid;
     border-radius: 6%;
-}
+    border-color: white;
+    border-width: 0.3vw;
+} */

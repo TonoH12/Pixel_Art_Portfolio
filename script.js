@@ -63,14 +63,14 @@ function nextImage() {
     }
 }
 
-function openPopup() {
-    document.getElementById('popup').style.opacity = 1;
-    document.getElementById('popup').style.pointerEvents = "auto";
-}
+// function openPopup() {
+//     document.getElementById('popup').style.opacity = 1;
+//     document.getElementById('popup').style.pointerEvents = "auto";
+// }
 
-function closePopup() {
-    document.getElementById('popup').style.opacity = 0;
-    document.getElementById('popup').style.pointerEvents = "none";
+// function closePopup() {
+//     document.getElementById('popup').style.opacity = 0;
+//     document.getElementById('popup').style.pointerEvents = "none";
 }
 
 // window.addEventListener('load', function() {
