@@ -63,16 +63,6 @@ function nextImage() {
     }
 }
 
-// function openPopup() {
-//     document.getElementById('popup').style.opacity = 1;
-//     document.getElementById('popup').style.pointerEvents = "auto";
-// }
-
-// function closePopup() {
-//     document.getElementById('popup').style.opacity = 0;
-//     document.getElementById('popup').style.pointerEvents = "none";
-}
-
 // window.addEventListener('load', function() {
 document.addEventListener('DOMContentLoaded', function() {
     currentImage = 1;
@@ -80,3 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
         timer = setInterval(nextImage, 3000);
     }
 });
+
+function toggleMode() {
+    
+}
