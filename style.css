@@ -268,28 +268,25 @@ a:hover {
 
 #colorMode {
     background-color: #28282e;
-    width: 80px;
+    right: 5px;
+    width: 70px;
     border-radius: 30px;
-    font-size: initial;
-    right: 1vw;
     height: 35px;
     margin-top: 3.5px;
 }
 
-#colorMode::before {
-    content: "";
+ #circleMode {
+    position: absolute;
     width: 27px;
     height: 27px;
-    position: absolute;
-    left: 4px;
-    right: auto;
-    top: 4px;
+    top: 7px;
+    right: 43px;
     border-radius: 50%;
     background-color: white;
-    transition: left 0.1s ease-in-out, right 0.1s ease-in-out;
+    transition: right 0.1s ease-in-out;
 }
 
-#colorMode::after {
-    right: 4px;
+/* #colorMode::after {
+    right: 10px;
     left: auto;
-}
+} */
