@@ -8,7 +8,6 @@
     --color-three: #fff7e4;
     --color-four: #6c5671;
     --color-five: #3f3f55;
-    --color-six: #accce4;
 }
 :root.lightTheme {
     --color-one: #ffe6c6;
@@ -16,7 +15,6 @@
     --color-three: #28282e;
     --color-four: #b0eb93;
     --color-five: #fff7e4;
-    --color-six: #fff7a0;
 }
 
 
@@ -119,7 +117,7 @@ button {
 .circle {
     border-width: 1px;
     border-style: solid;
-    border-color: var(--color-three);
+    border-color: #fff7e4;
     background-color: transparent;
     border-radius: 50%;
     width: 100%;
@@ -249,9 +247,12 @@ button {
 .pallete {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
-    padding: 5px;
+    margin: 12px;
     margin-left: 3%;
     margin-right: 3%;
+    border-style: solid;
+    border-color: var(--color-four);
+    border-width: 2px;
 }
 
 .color {
@@ -280,7 +281,7 @@ ul li a {
 }
 
 a:hover {
-    background-color: var(--color-six);
+    background-color: var(--color-four);
     color: var(--color-three);
 }
 

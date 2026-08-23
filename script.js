@@ -1,3 +1,8 @@
+if(localStorage.getItem('currentMode') == 1) {
+    document.documentElement.classList.toggle('lightTheme');
+    document.getElementById('circleMode').style.right = '10px';
+}
+
 function resizeTextboxes() {
     let width = window.innerWidth;
     let withoutMargins = width ;
@@ -74,13 +79,13 @@ document.addEventListener('DOMContentLoaded', function() {
 let currentMode = 0;
 
 function toggleMode() {
-    let rightDistance = window.getComputedStyle(document.getElementById('circleMode')).right;
+    document.documentElement.classList.toggle('lightTheme');
 
-    if (rightDistance === '43px') {
+    if(document.documentElement.classList.contains('lightTheme')) {
+        localStorage.setItem('currentMode', 1);
         document.getElementById('circleMode').style.right = '10px';
     } else {
+        localStorage.setItem('currentMode', 0);
         document.getElementById('circleMode').style.right = '43px';
     }
-
-    document.documentElement.classList.toggle('lightTheme');
 }
