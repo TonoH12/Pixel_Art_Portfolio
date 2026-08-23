@@ -72,5 +72,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function toggleMode() {
-    
+    let rightDistance = window.getComputedStyle(document.getElementById('circleMode')).right;
+
+    if (rightDistance === '43px') {
+        document.getElementById('circleMode').style.right = '10px';
+    } else {
+        document.getElementById('circleMode').style.right = '43px';
+    }
 }

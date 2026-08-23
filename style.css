@@ -59,7 +59,7 @@ button {
     justify-content: center;
     background-color: #3f3f55;
     position: relative;
-    height: 60vh;
+    height: 80vh;
 }
 
 .rotatingImg {
@@ -280,13 +280,15 @@ a:hover {
     width: 27px;
     height: 27px;
     top: 7px;
+    left: auto;
     right: 43px;
     border-radius: 50%;
+    pointer-events: none;
     background-color: white;
-    transition: right 0.1s ease-in-out;
+    transition: right 0.2s ease-in-out;
 }
 
-/* #colorMode::after {
+#circleMode::after {
     right: 10px;
     left: auto;
-} */
+}
