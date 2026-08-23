@@ -2,11 +2,29 @@
     cursor: url('UI_Images/Larger_Cursor.png'), auto;
 }
 
+:root {
+    --color-one: #28282e;
+    --color-two: #b0a9e4;
+    --color-three: #fff7e4;
+    --color-four: #6c5671;
+    --color-five: #3f3f55;
+    --color-six: #accce4;
+}
+:root.lightTheme {
+    --color-one: #ffe6c6;
+    --color-two: #87a889;
+    --color-three: #28282e;
+    --color-four: #b0eb93;
+    --color-five: #fff7e4;
+    --color-six: #fff7a0;
+}
+
+
 body {
     height: 100%;
-    background-color: #28282e;
+    background-color: var(--color-one);
     margin: 0;
-    color: #b0a9e4; 
+    color: var(--color-two); 
 }
 
 h1 {
@@ -42,8 +60,8 @@ div {
 button {
     position: absolute;
     z-index: 2;
-    background-color: #28282e;
-    color: #fff7e4;
+    background-color: var(--color-one);
+    color: var(--color-three);
     border: none;
     font-family: "Jersey 15", sans-serif;
     font-size: 25px;
@@ -57,7 +75,7 @@ button {
 #imageCarousel {
     align-content: center;
     justify-content: center;
-    background-color: #3f3f55;
+    background-color: var(--color-five);
     position: relative;
     height: 80vh;
 }
@@ -101,7 +119,7 @@ button {
 .circle {
     border-width: 1px;
     border-style: solid;
-    border-color: #fff7e4;
+    border-color: var(--color-three);
     background-color: transparent;
     border-radius: 50%;
     width: 100%;
@@ -125,7 +143,7 @@ button {
 }
 
 .item:hover {
-    box-shadow: 0 0 1vw 0.50vw #b0a9e4;
+    box-shadow: 0 0 1vw 0.50vw var(--color-two);
     transform: scale(1.05);
 }
 
@@ -133,10 +151,10 @@ button {
     display: grid;
     position: relative;
     align-items: center;
-    background-image: radial-gradient(circle, #28282e, #3f3f55);
+    background-image: radial-gradient(circle, var(--color-one), var(--color-five));
     height: 60dvh;
     overflow: hidden;
-    border: 2px solid #6c5671;
+    border: 2px solid var(--color-four);
 }
 
 .image_display {
@@ -151,7 +169,7 @@ button {
 .size_display_box {
     position: absolute;
     z-index: 3;
-    background-color: #28282e;
+    background-color: var(--color-one);
     opacity: 0.8;
     border-radius: 5%;
     bottom: 0%;
@@ -162,8 +180,8 @@ button {
     z-index: 3;
     top: 0%;
     margin: 1vh;
-    color: #fff7e4;
-    background-color: #28282e;
+    color: var(--color-three);
+    background-color: var(--color-one);
     font-family:  "Jersey 15", sans-serif;
     font-size: 25px;
     padding: 1%;
@@ -175,11 +193,11 @@ button {
 
 .back_button:hover {
     border-style: solid;
-    border-color: #fff7e4;
+    border-color: var(--color-three);
 }
 
 .image_size {
-    color: #fff7e4;
+    color: var(--color-three);
     font-size: 25px;
     margin-bottom: 1px;
     margin-left: 5px;
@@ -205,9 +223,9 @@ button {
 }
 
 .container {
-    background-image: radial-gradient(circle, #28282e, #3f3f55);
+    background-image: radial-gradient(circle, var(--color-one), var(--color-five));
     overflow-wrap: anywhere;
-    border: 2px solid #6c5671;
+    border: 2px solid var(--color-four);
 }
 
 #left_div {
@@ -247,13 +265,13 @@ ul {
     overflow: hidden;
     padding: 0;
     margin: 0;
-    background-color: #b0a9e4;
+    background-color: var(--color-two);
 }
 
 ul li a {
     display: block;
-    background-color: #b0a9e4;
-    color: #28282e;
+    background-color: var(--color-two);
+    color: var(--color-one);
     font-weight: bold;
     text-decoration: none;
     text-align: center;
@@ -262,12 +280,12 @@ ul li a {
 }
 
 a:hover {
-    background-color: #accce4;
-    color: #fff7e4;
+    background-color: var(--color-six);
+    color: var(--color-three);
 }
 
 #colorMode {
-    background-color: #28282e;
+    background-color: var(--color-one);
     right: 5px;
     width: 70px;
     border-radius: 30px;
@@ -284,7 +302,7 @@ a:hover {
     right: 43px;
     border-radius: 50%;
     pointer-events: none;
-    background-color: white;
+    background-color: var(--color-three);
     transition: right 0.2s ease-in-out;
 }
 

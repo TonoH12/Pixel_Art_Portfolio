@@ -71,6 +71,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+let currentMode = 0;
+
 function toggleMode() {
     let rightDistance = window.getComputedStyle(document.getElementById('circleMode')).right;
 
@@ -79,4 +81,6 @@ function toggleMode() {
     } else {
         document.getElementById('circleMode').style.right = '43px';
     }
+
+    document.documentElement.classList.toggle('lightTheme');
 }
