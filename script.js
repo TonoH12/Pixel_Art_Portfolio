@@ -86,6 +86,6 @@ function toggleMode() {
         document.getElementById('circleMode').style.right = '10px';
     } else {
         localStorage.setItem('currentMode', 0);
-        document.getElementById('circleMode').style.right = '43px';
+        document.getElementById('circleMode').style.right = '42px';
     }
 }
